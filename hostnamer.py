@@ -18,5 +18,11 @@ def generate():
                          pick(vowels, 1))
 
 
-for i in range(9):
-    print generate()
+def main():
+    out = []
+    for i in range(9):
+        out.append(generate())
+    return out
+
+if __name__ == "__main__":
+    print("\n".join(main()))
